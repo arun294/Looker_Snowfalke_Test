@@ -21,7 +21,7 @@ view: sql_runner_query_category {
     sql: ${TABLE}."item.i_category" ;;
   }
 
-  dimension: store_sales_ss_quantity {
+  measure: store_sales_ss_quantity {
     type: number
     sql: ${TABLE}."store_sales.ss_quantity" ;;
   }
