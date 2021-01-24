@@ -42,6 +42,8 @@ explore: reason {}
 
 explore: ship_mode {}
 
+explore: sql_runner_query_category {}
+
 explore: store {}
 
 explore: store_returns {}
