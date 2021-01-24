@@ -83,7 +83,7 @@ view: store_sales {
     sql: ${TABLE}."SS_PROMO_SK" ;;
   }
 
-  dimension: ss_quantity {
+  measure: ss_quantity {
     type: number
     sql: ${TABLE}."SS_QUANTITY" ;;
   }
