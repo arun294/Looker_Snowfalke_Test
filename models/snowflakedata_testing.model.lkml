@@ -12,6 +12,8 @@ persist_with: snowflakedata_testing_default_datagroup
 
 explore: call_center {}
 
+explore: countrywholesalecost {}
+
 explore: catalog_page {}
 
 explore: catalog_returns {}
