@@ -46,7 +46,28 @@ explore: sql_runner_query_category {}
 
 explore: store {}
 
-explore: store_returns {}
+explore: store_returns {
+  join:  customer{
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${store_returns.sr_customer_sk} = ${customer.c_customer_sk} ;;
+  }
+  join:  date_dim{
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${store_returns.sr_returned_date_sk} =  ${date_dim.d_date_sk};;
+  }
+  join:  item{
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${store_returns.sr_item_sk} =  ${item.i_item_sk};;
+  }
+  join:  store{
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${store_returns.sr_store_sk} =  ${store.s_store_sk};;
+  }
+}
 
 explore: store_returns_bkp {}
 
