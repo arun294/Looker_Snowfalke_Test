@@ -1,5 +1,5 @@
 view: store_sales {
-  sql_table_name: "TPCDS"."STORE_SALES"
+  sql_table_name: TPCDS.STORE_SALES
     ;;
 
   dimension: ss_addr_sk {
@@ -69,7 +69,7 @@ view: store_sales {
   measure: ss_net_paid {
     type: sum
     value_format_name: id
-    sql: ${TABLE}."SS_NET_PAID" ;;
+    sql: ${TABLE}.SS_NET_PAID ;;
   }
 
   dimension: ss_net_paid_inc_tax {
