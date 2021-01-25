@@ -62,8 +62,8 @@ view: store_sales {
     sql: ${TABLE}."SS_LIST_PRICE" ;;
   }
 
-  dimension: ss_net_paid {
-    type: number
+  measure: ss_net_paid {
+    type: sum
     value_format_name: id
     sql: ${TABLE}."SS_NET_PAID" ;;
   }
