@@ -21,6 +21,10 @@ view: store_sales {
     type: number
     sql: ${TABLE}."SS_CUSTOMER_SK" ;;
   }
+  measure: ss_customer_distinctcount_sk {
+    type: count_distinct
+    sql: ${TABLE}."SS_CUSTOMER_SK" ;;
+  }
 
   dimension: ss_ext_discount_amt {
     type: number
