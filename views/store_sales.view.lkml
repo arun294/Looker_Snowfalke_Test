@@ -84,7 +84,7 @@ view: store_sales {
   }
 
   measure: ss_quantity {
-    type: number
+    type: sum
     sql: ${TABLE}."SS_QUANTITY" ;;
   }
 
