@@ -1,5 +1,5 @@
 view: store_sales {
-  sql_table_name: "DATA_DEV"."STORE_SALES"
+  sql_table_name: "TPCDS"."STORE_SALES"
     ;;
 
   dimension: ss_addr_sk {
