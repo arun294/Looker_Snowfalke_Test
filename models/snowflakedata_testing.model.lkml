@@ -1,4 +1,4 @@
-connection: "bigquery_ms_poc_eval"
+connection: "snowflake_demo"
 
 # include all the views
 include: "/views/**/*.view"
