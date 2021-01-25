@@ -32,8 +32,8 @@ view: store_returns {
     sql: ${TABLE}."SR_ITEM_SK" ;;
   }
 
-  dimension: sr_net_loss {
-    type: number
+  measure: sr_net_loss {
+    type: sum
     sql: ${TABLE}."SR_NET_LOSS" ;;
   }
 
